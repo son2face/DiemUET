@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5c7db366-8fd4-46f5-b9b8-55cefda6e568" name="skylab" url="http://112.137.129.95">
+        <fileTransfer host="112.137.129.95" port="22" rootFolder="/home/nguyenson" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="200000" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="c5086a60-3ca4-4032-b921-4ba426bb63dc" name="120" url="http://112.137.129.120">
+        <fileTransfer host="112.137.129.120" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,74 @@
+<div class="ulm">
+    <div class="ulm-li"><a href="">Home</a>></div>
+    <div class="ulm-li dropdown1">
+        <a href="javascript:void(0)">Cơ sở dữ liệu</a>
+        <div class="dropdown1-content">
+            <a href="#">Database 1</a>
+            <a href="#">Database 2</a>
+            <a href="#">Database 3</a>
+        </div>
+    </div>
+    <div class="ulm-li"><a href="#h">Thêm bản ghi từ file và link</a></div>
+    >
+    <div class="ulm-li" style="float:right"><a href="#news">About</a></div>
+</div>
+
+
+<style>
+    .ulm {
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3b3d3e;
+
+    }
+
+    .ulm-li {
+        float: left;
+    }
+
+    .ulm-li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none
+    }
+
+    .ulm-li a:hover, dropdown1:hover {
+        background-color: #4CAF50;
+    }
+
+    .ulm-li .dropdown1 {
+        display: inline-block;
+    }
+
+    .dropdown1-content {
+        display: none;
+        position: fixed;
+        background-color: #a0a0a0;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown1-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown1-content a:hover {
+        background-color: #fff
+    }
+
+    .dropdown1:hover .dropdown1-content {
+        display: block;
+    }
+
+
+</style>

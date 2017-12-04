@@ -1,0 +1,83 @@
+<!--BANG DANH SACH TAT CA THONG TIN LIEN LAC-->
+<!---->
+<div class="container">
+    <div class="list list-user-form" ng-app="FPTApp" ng-controller="GeneralPageController">
+        <div class="list-header" colspan="7">Danh sách liên lạc IPPhone</div>
+        <div class="list-body">
+            <table class="table table-bordered table-responsive" style="height:100%;width:100%">
+                <thead class="list-form-header">
+                <tr style="background:#0064b4">
+                    <th>STT</th>
+                    <th>Công ty</th>
+                    <th>Phòng ban</th>
+                    <th>Nhân viên</th>
+                    <th>Số IPPhone</th>
+                    <th>Mức cước</th>
+                    <th>
+                        <button class="glyphicon glyphicon-plus"></button>
+                    </th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <form class="search-form" method="GET">
+                            <input type="text" class="form-control" placeholder="Search..." name="query">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </form>
+                    </td>
+                    <td>
+                        <input ng-model="Search.Department" type="text" class="form-controll" id="pban"
+                               placeholder="Tìm kếm phòng ban"/>
+                    </td>
+                    <td>
+                        <input ng-model="Search.Employee" type="text" class="form-controll" id="nv"
+                               placeholder="Tìm kếm nhân viên"/>
+                    </td>
+                    <td>
+                        <input ng-model="Search.IPPhone" type="text" class="form-controll" placeholder="Tìm kếm ipphone"
+                               id="ipp"/>
+                    </td>
+                    <td>
+                        <input ng-model="Search.Level" type="text" class="form-controll" placeholder="Tìm kếm mức cước"
+                               id="mc"/>
+                    </td>
+                    <td>
+                        <form class="search-form" action="extra_search.html" method="GET">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" name="query">
+                                <span class="input-group-btn">
+                                            <a href="javascript:" class="btn submit">
+                                                <i class="icon-magnifier"></i>
+                                            </a>
+                                        </span>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+                </thead>
+                <!--<tbody>
+
+                    <tr ng-repeat="Contact in Contacts">
+                        <td>{{$index + 1}}</td>
+                        <td>{{Contact.Company}}</td>
+                        <td>{{Contact.Cepartment}}</td>
+                        <td>{{Contact.Employee}}</td>
+                        <td>{{Contact.IPPhone}}</td>
+                        <td>{{Contact.Level}}</td>
+                        <td>
+                            <button type="button" class="btn btn-xs btn-default">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                            </button>
+                            <button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>-->
+            </table>
+
+        </div>
+    </div>
+
+</div>
+<!--END BANG-->

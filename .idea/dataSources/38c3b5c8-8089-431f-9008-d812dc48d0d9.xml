@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - @localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="diemthiuet">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="registerobject"/>
+    <schema id="7" parent="1" name="sys"/>
+    <schema id="8" parent="1" name="classicmodels">
+      <Current>1</Current>
+    </schema>
+    <schema id="9" parent="1" name="intelligent">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="10" parent="1" name="my_classicmodels"/>
+    <table id="11" parent="9" name="edge"/>
+    <table id="12" parent="9" name="file"/>
+    <table id="13" parent="9" name="point"/>
+    <table id="14" parent="9" name="problem"/>
+    <table id="15" parent="9" name="shape"/>
+    <column id="16" parent="11" name="IdEdge">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="11" name="StartX">
+      <Position>2</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="18" parent="11" name="StartY">
+      <Position>3</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="19" parent="11" name="EndX">
+      <Position>4</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="20" parent="11" name="EndY">
+      <Position>5</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="21" parent="11" name="IdShape">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="22" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdEdge</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="23" parent="12" name="IdFile">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="12" name="Name">
+      <Position>2</Position>
+      <DataType>varchar(1000)|0</DataType>
+    </column>
+    <column id="25" parent="12" name="Data">
+      <Position>3</Position>
+      <DataType>longblob|0</DataType>
+    </column>
+    <column id="26" parent="12" name="CreatedTime">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="27" parent="12" name="Type">
+      <Position>5</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="28" parent="12" name="ExpiredTime">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="29" parent="12" name="UserId">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="30" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdFile</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="31" parent="13" name="IdPoint">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="13" name="X">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="33" parent="13" name="Y">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="34" parent="13" name="IdProblem">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="35" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdPoint</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="36" parent="14" name="IdProblem">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="14" name="Status">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="38" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdProblem</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="39" parent="15" name="IdShape">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="15" name="IdProblem">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="41" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdShape</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

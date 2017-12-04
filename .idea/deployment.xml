@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="120">
+    <serverData>
+      <paths name="120">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sonnv_60/apache-tomcat-9.0.0.M21/webapps/diemuet" local="$PROJECT_DIR$/out/artifacts/DiemUET_war_exploded" web="/diemuet" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="skylab">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/apache-tomcat-9.0.0.M21/webapps/Diemuet" local="$PROJECT_DIR$/out/artifacts/DiemUET_war_exploded" web="Diemuet" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

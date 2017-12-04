@@ -1,0 +1,54 @@
+.my-bg-green {
+    background-color: #1ea22c;
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li > a {
+
+    background-color: #1ea22c;
+    color: white !important;
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li > a :hover {
+
+    background-color: black;
+    color: white !important;
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li.mega-menu-dropdown > .dropdown-menu .mega-menu-content .mega-menu-submenu li > a.iconify {
+    background-color: #1ea22c;
+    color: white !important;
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li.mega-menu-dropdown > .dropdown-menu .mega-menu-content .mega-menu-submenu li > a:focus, .page-header .page-header-menu .hor-menu .navbar-nav > li.mega-menu-dropdown > .dropdown-menu .mega-menu-content .mega-menu-submenu li > a:hover {
+    background-color: black;
+    color: white !important;
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li:hover > a, .page-header .page-header-menu .hor-menu .navbar-nav > li.open > a, .page-header .page-header-menu .hor-menu .navbar-nav > li > a:hover, .page-header .page-header-menu .hor-menu .navbar-nav > li > a:focus, .page-header .page-header-menu .hor-menu .navbar-nav > li > a:active {
+    background-color: black;
+    color: white !important;
+}
+
+.portlet.box.my-bg-green {
+    background-color: #1ea22c;
+    border: solid 2px #1ea22c;
+    border-radius: 6px !important;
+}
+
+.btn-success {
+    background-color: #1ea22c;
+    border: solid 2px #1ea22c;
+}
+
+.btn-success:hover {
+    background-color: black;
+    border: solid 2px #1ea22c;
+}
+
+.buttons button:hover {
+    background-color: black;
+}
+
+.btn-success.focus, .btn-success:focus {
+    background-color: #1ea22c;
+}

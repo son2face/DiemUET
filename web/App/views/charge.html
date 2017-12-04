@@ -1,0 +1,93 @@
+<!--BANG DANH SACH TAT CA THONG TIN LIEN LAC-->
+<!---->
+<div class="container-fuild">
+    <div class="list list_user_form" ng-app="MetronicApp">
+        <div class="list-header" colspan="7">Danh sách liên lạc IPPhone</div>
+        <div class="col-md-6" ng-controller="dynamicDemoController as demo">
+            <h3>ngTableDynamic directive</h3>
+            <table ng-table-dynamic="demo.tableParams with demo.cols"
+                   class="table table-condensed table-bordered table-hover">
+                <colgroup>
+                    <col width="60%"/>
+                    <col width="20%"/>
+                    <col width="20%"/>
+                </colgroup>
+                <tr class="ng-table-group" ng-repeat-start="group in $groups">
+                    <td colspan="3">
+                        <a href="" ng-click="group.$hideRows = !group.$hideRows">
+                            <span class="glyphicon"
+                                  ng-class="{ 'glyphicon-chevron-right': group.$hideRows, 'glyphicon-chevron-down': !group.$hideRows }"></span>
+                            <strong>{{ group.value }}</strong>
+                        </a>
+                    </td>
+                </tr>
+                <tr ng-hide="group.$hideRows" ng-repeat="user in group.data" ng-repeat-end>
+                    <td ng-repeat="col in $columns">{{user[col.field]}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="list-body">
+            <table class="table table-bordered table-responsive" style="height:100%;width:100%">
+                <thead class="list_form_header bg-primary">
+                <tr>
+                    <th>STT</th>
+                    <th>Công ty</th>
+                    <th>Phòng ban</th>
+                    <th>Nhân viên</th>
+                    <th>Số IPPhone</th>
+                    <th>Mức cước</th>
+                    <th>Theem</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input ng-model="Search.Company" type="text" class="form-controll" id="cty"
+                               placeholder="Nhập công ty"/>
+                    </td>
+                    <td>
+                        <input ng-model="Search.Department" type="text" class="form-controll" id="pban"
+                               placeholder="Nhập phòng ban"/>
+                    </td>
+                    <td>
+                        <input ng-model="Search.Employee" type="text" class="form-controll" id="nv"
+                               placeholder="Nhập tên nhân viên"/>
+                    </td>
+                    <td>
+                        <input ng-model="Search.IPPhone" type="text" class="form-controll" placeholder="Nhập số ipphone"
+                               id="ipp"/>
+                    </td>
+                    <td>
+                        <input ng-model="Search.Level" type="text" class="form-controll" placeholder="Nhập Mức cước"
+                               id="mc"/>
+                    </td>
+                    <td>
+                        <button id="demo" ng-click="create()">Search</button>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="Contact in Contacts">
+                    <td>{{$index + 1}}</td>
+                    <td>{{list.cty}}</td>
+                    <td>{{list.pban}}</td>
+                    <td>{{list.nv}}</td>
+                    <td>{{list.ipp}}</td>
+                    <td>{{list.mc}}</td>
+                    <td>
+                        <button type="button" class="btn btn-xs btn-default">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </button>
+                        <button type="button" data-bind="click: $parent.remove"
+                                class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top"
+                                data-original-title="Delete">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+<!--END BANG-->
